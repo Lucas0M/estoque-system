@@ -1,4 +1,7 @@
 <?php
+session_start();
+
+require __DIR__ . '/produtosHandler.php';
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
   // pegar dados do form
@@ -23,16 +26,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   }
 
   if ($errors) {
-    foreach ($errors as $error) {
-      echo "<p>" . $error . "</p>";
-    }
+    $_SESSION["form_errors"] = $errors;
 
     header('Location: ../index.php');
     die();
   }
 
+  adicionarProduto($nome, $preco, $quantidade, $categoria);
+
 
   header('Location: ../index.php?adicionado=success');
+  die();
 } else {
   header('Location: ../index.php');
+  die();
 }

@@ -3,9 +3,16 @@
     {
       "id": 0,
       "nome": "Geladeira",
-      "preco": 2000.0,
+      "preco": 2000,
       "quantidade": 50,
-      "categoria": "Eletrodomesticos"
+      "categoria": "eletrodomesticos"
+    },
+    {
+      "id": 1,
+      "nome": "GTA 6",
+      "quantidade": 20,
+      "preco": 500,
+      "categoria": "eletronicos"
     }
   ]
 }

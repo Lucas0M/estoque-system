@@ -24,12 +24,15 @@
 
 ```bash
 {
-  "produtos": [{
-    "id": 0,
-    "nome": "Geladeira",
-    "preco": 2000.00,
-    "quantidade": 50,
-    "categoria": "Eletrodomesticos"
-  }]
+  "produtos": [
+    {
+      "id": 0,
+      "nome": "Geladeira",
+      "preco": 2000.0,
+      "quantidade": 50,
+      "categoria": "Eletrodomesticos"
+    }
+  ]
 }
+
 ```

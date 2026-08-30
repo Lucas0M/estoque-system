@@ -1,6 +1,7 @@
 <?php
-require_once './includes/config_session.php';
 require_once './includes/errors.php';
+require_once './includes/produtosHandler.php';
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -14,7 +15,7 @@ require_once './includes/errors.php';
 <body>
   <main class="container">
     <div class="formulario">
-      <form action="../includes/formHandler.php" method="post">
+      <form action="./includes/formHandler.php" method="post">
         <input type="text" name="nome" placeholder="Nome do Produto..." required>
         <input type="number" name="preco" placeholder="Preço do Produto..." required>
         <input type="number" name="quantidade" placeholder="Quantidade no Estoque..." required>
@@ -27,6 +28,9 @@ require_once './includes/errors.php';
         <button type="submit">Adicionar</button>
       </form>
       <div class="errors">
+        <?php
+        show_errors();
+        ?>
       </div>
     </div>
   </main>
