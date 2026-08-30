@@ -7,11 +7,11 @@ function show_errors()
     $errors = $_SESSION["form_errors"];
 
     foreach ($errors as $error) {
-      echo "<p class='error'>" . htmlspecialchars($error) . "</p>";
+      echo "<div class='alert alert-danger' role='alert'>" . htmlspecialchars($error) . "</div>";
     }
 
     unset($_SESSION["form_errors"]);
-  } else if (isset($_GET["adicionadp"]) && $_GET["adicionado"] === "success") {
-    echo "<p class='success'>" . "Produto adicionado com sucesso!" . "</p>";
+  } else if (isset($_GET["adicionado"]) && $_GET["adicionado"] === "success") {
+    echo "<div class='alert alert-success'>" . "Produto adicionado com sucesso!" . "</div>";
   }
 }

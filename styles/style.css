@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #000;
+  background-color: #e8f1f2;
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 220px);
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #1b98e0;
+  color: #fff;
+  padding: 0 20px 0 20px;
+  font-weight: 500;
+}
+.success {
+  color: rgb(0, 165, 41);
+  font-weight: 500;
+}

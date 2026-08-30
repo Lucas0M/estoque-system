@@ -1,6 +1,26 @@
 <?php
 
-function mostrarProdutos() {}
+
+function mostrarProdutos()
+{
+  // pega os produtos do json
+  $data = file_get_contents('./produtos.json');
+  $dataToPhp = json_decode($data, true);
+
+  $produtos = $dataToPhp['produtos'];
+
+  // itera todos os produtos da lista produtos
+  foreach ($produtos as $produto) {
+    echo "<div class='card'>";
+    echo "<div class='card-body'>";
+    echo "<p>Nome: " . $produto["nome"] . "</p>";
+    echo "<p>Preço: " . $produto["preco"] . "R$</p>";
+    echo "<p>Quantidade: " . $produto["quantidade"] . "</p>";
+    echo "<p>Categoria: " . $produto["categoria"] . "</p>";
+    echo "</div>";
+    echo "</div>";
+  }
+}
 
 function adicionarProduto(string $nome, int $preco, int $quantidade, string $categoria)
 {
