@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 main {
@@ -30,7 +33,7 @@ h3 {
 
 .produtos {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 220px);
+  grid-template-columns: repeat(auto-fill, 290px);
   gap: 30px;
   justify-content: center;
   margin-bottom: 30px;
@@ -45,4 +48,9 @@ h3 {
 .success {
   color: rgb(0, 165, 41);
   font-weight: 500;
+}
+
+.nenhum {
+  grid-column: 1 / -1;
+  text-align: center;
 }

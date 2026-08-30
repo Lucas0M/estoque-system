@@ -36,7 +36,7 @@ session_start();
       show_errors();
       ?>
     </div>
-    <h3>Produtos:</h3>
+    <h3>Produtos</h3>
     <div class="produtos">
       <?php
       mostrarProdutos();

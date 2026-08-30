@@ -9,15 +9,21 @@ function mostrarProdutos()
 
   $produtos = $dataToPhp['produtos'];
 
-  // itera todos os produtos da lista produtos
-  foreach ($produtos as $produto) {
-    echo "<div class='card'>";
-    echo "<div class='card-body'>";
-    echo "<p>Nome: " . $produto["nome"] . "</p>";
-    echo "<p>Preço: " . $produto["preco"] . "R$</p>";
-    echo "<p>Quantidade: " . $produto["quantidade"] . "</p>";
-    echo "<p>Categoria: " . $produto["categoria"] . "</p>";
-    echo "</div>";
+  if ($produtos) {
+    // itera todos os produtos da lista produtos
+    foreach ($produtos as $produto) {
+      echo "<div class='card'>";
+      echo "<div class='card-body'>";
+      echo "<p>Nome: " . htmlspecialchars($produto["nome"]) . "</p>";
+      echo "<p>Preço: " . htmlspecialchars($produto["preco"]) . "R$</p>";
+      echo "<p>Quantidade: " . htmlspecialchars($produto["quantidade"]) . "</p>";
+      echo "<p>Categoria: " . htmlspecialchars($produto["categoria"]) . "</p>";
+      echo "</div>";
+      echo "</div>";
+    }
+  } else {
+    echo "<div class='nenhum'>";
+    echo "<p>" . "Nenhum produto adicionado ao estoque ainda." . "</p>";
     echo "</div>";
   }
 }
@@ -30,7 +36,7 @@ function adicionarProduto(string $nome, int $preco, int $quantidade, string $cat
 
   // pega ultimo id dos produtos pra somar 1 depois
   $ultimoIndex = array_key_last($produtosToPhp['produtos']);
-  $ultimoId = $produtosToPhp['produtos'][$ultimoIndex]['id'];
+  $ultimoId = $produtosToPhp['produtos'][$ultimoIndex]['id'] ?? 0;
 
   // cria novo produto em array
   $newData = [
@@ -48,4 +54,5 @@ function adicionarProduto(string $nome, int $preco, int $quantidade, string $cat
   file_put_contents('../produtos.json', json_encode($produtosToPhp, JSON_PRETTY_PRINT));
 }
 
+// ainda desenvolver (n sei como)
 function removerProduto() {}

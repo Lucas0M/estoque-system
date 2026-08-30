@@ -1,11 +1,3 @@
 {
-  "produtos": [
-    {
-      "id": 0,
-      "nome": "Geladeira",
-      "preco": 2000,
-      "quantidade": 50,
-      "categoria": "Eletrodomesticos"
-    }
-  ]
+  "produtos": []
 }
