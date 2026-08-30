@@ -1,0 +1,9 @@
+services:
+  estoque:
+    build: .
+    container_name: estoque-system
+    ports:
+      - "8080:80"
+    volumes:
+      - ./produtos.json:/var/www/html/produtos.json
+    restart: unless-stopped

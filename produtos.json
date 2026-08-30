@@ -1,67 +1,11 @@
 {
-    "produtos": [
-        {
-            "id": 0,
-            "nome": "Geladeira",
-            "preco": 2000,
-            "quantidade": 50,
-            "categoria": "Eletrodomesticos"
-        },
-        {
-            "id": 0,
-            "nome": "Geladeira",
-            "preco": 2000,
-            "quantidade": 50,
-            "categoria": "Eletrodomesticos"
-        },
-        {
-            "id": 0,
-            "nome": "Geladeira",
-            "preco": 2000,
-            "quantidade": 50,
-            "categoria": "Eletrodomesticos"
-        },
-        {
-            "id": 0,
-            "nome": "Geladeira",
-            "preco": 2000,
-            "quantidade": 50,
-            "categoria": "Eletrodomesticos"
-        },
-        {
-            "id": 0,
-            "nome": "Geladeira",
-            "preco": 2000,
-            "quantidade": 50,
-            "categoria": "Eletrodomesticos"
-        },
-        {
-            "id": 0,
-            "nome": "Geladeira",
-            "preco": 2000,
-            "quantidade": 50,
-            "categoria": "Eletrodomesticos"
-        },
-        {
-            "id": 0,
-            "nome": "Geladeira",
-            "preco": 2000,
-            "quantidade": 50,
-            "categoria": "Eletrodomesticos"
-        },
-        {
-            "id": 1,
-            "nome": "teste",
-            "quantidade": 123,
-            "preco": 123,
-            "categoria": "Eletrodomesticos"
-        },
-        {
-            "id": 2,
-            "nome": "tet",
-            "quantidade": 123,
-            "preco": 123,
-            "categoria": "Eletrodomesticos"
-        }
-    ]
+  "produtos": [
+    {
+      "id": 0,
+      "nome": "Geladeira",
+      "preco": 2000,
+      "quantidade": 50,
+      "categoria": "Eletrodomesticos"
+    }
+  ]
 }
