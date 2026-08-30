@@ -36,3 +36,11 @@
 }
 
 ```
+
+- Docker incluso
+
+Para rodar:
+
+```bash
+docker compose up -d --build
+```
