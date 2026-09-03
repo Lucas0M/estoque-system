@@ -4,13 +4,11 @@ session_start();
 require __DIR__ . '/produtosHandler.php';
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-  // pegar dados do form
   $nome = htmlspecialchars($_POST["nome"]);
   $preco = htmlspecialchars($_POST["preco"]);
   $quantidade = htmlspecialchars($_POST["quantidade"]);
   $categoria = htmlspecialchars($_POST["categoria"]);
 
-  // tratar erros
   $errors = [];
 
   if (empty($nome) || empty($preco) || empty($quantidade) || $categoria === "none") {
