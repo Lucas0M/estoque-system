@@ -1,7 +1,5 @@
 # Estoque System
 
-# Juro pelo meu cachorro que eu não usei IA, somente neste README. 👍
-
 ## Form
 
 - Nome do produto
